@@ -7,3 +7,5 @@ Introducing my new ASCII text converter! It's a simple but cool program that can
 ->The program is easy to use, with just a few clicks you can add some personality to your messages.
 ->The code includes a function to load each letter and a printer function to display the final result.
 ->Give it a try and see how much fun you can have with ASCII text!
+
+future updates: (1) I will try to introduce new font- styles so you can select a particular font in the menu bar. 
