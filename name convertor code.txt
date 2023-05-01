@@ -1,0 +1,269 @@
+#include <iostream>
+#include  <bits/stdc++.h>
+using namespace std;
+#define MAX_NAME_LENGTH 60
+string l1="",l2="",l3="",l4="";
+void printer()
+{
+    cout<<l1<<endl;
+    cout<<l2<<endl;
+    cout<<l3<<endl;
+    cout<<l4<<endl;
+    l1=l2=l3=l4="";
+}
+void loader(char x)
+{
+
+    switch(x)
+    {
+    case 'a':
+        {
+            l1+=" ___ ";
+            l2+="/   \\";
+            l3+="| - |";
+            l4+="|_|_|";
+            break;
+        }
+    case 'b':
+        {
+            l1+=" ___ ";
+            l2+="| _ )";
+            l3+="| _ \\";
+            l4+="|___/";
+            break;
+        }
+    case 'c':
+        {
+            l1+="  ___ ";
+            l2+=" / __|";
+            l3+="| (__ ";
+            l4+=" \\___|";
+            break;
+        }
+    case 'd':
+        {
+            l1+=" ___  ";
+            l2+="|   \\ ";
+            l3+="| |) |";
+            l4+="|___/ ";
+            break;
+        }
+    case 'e':
+        {
+            l1+=" ___ ";
+            l2+="| __|";
+            l3+="| _| ";
+            l4+="|___|";
+            break;
+        }
+    case 'f':
+        {
+            l1+=" ___ ";
+            l2+="| __|";
+            l3+="| _| ";
+            l4+="|_|  ";
+            break;
+        }
+    case 'g':
+        {
+            l1+="  ___ ";
+            l2+=" / __|";
+            l3+="| (_ |";
+            l4+=" \\___|";
+            break;
+        }
+    case 'h':
+        {
+            l1+=" _  _ ";
+            l2+="| || |";
+            l3+="| __ |";
+            l4+="|_||_|";
+            break;
+        }
+    case 'i':
+        {
+            l1+=" ___ ";
+            l2+="|_ _|";
+            l3+=" | | ";
+            l4+="|___|";
+            break;
+        }
+    case 'j':
+        {
+            l1+="    _ ";
+            l2+=" _ | |";
+            l3+="| || |";
+            l4+=" \\__/ ";
+            break;
+        }
+    case 'k':
+        {
+            l1+=" _  __";
+            l2+="| |/ /";
+            l3+="|   < ";
+            l4+="|_|\\_\\";
+            break;
+        }
+    case 'l':
+        {
+            l1+=" _    ";
+            l2+="| |   ";
+            l3+="| |__ ";
+            l4+="|____|";
+            break;
+        }
+    case 'm':
+        {
+            l1+=" __  __ ";
+            l2+="|  \\/  |";
+            l3+="| |\\/| |";
+            l4+="|_|  |_|";
+            break;
+        }
+    case 'n':
+        {
+            l1+=" _  _ ";
+            l2+="| \\| |";
+            l3+="| .  |";
+            l4+="|_|\\_|";
+            break;
+        }
+    case 'o':
+        {
+            l1+="  ___  ";
+            l2+=" / _ \\ ";
+            l3+="| (_) |";
+            l4+=" \\___/ ";
+            break;
+        }
+    case 'p':
+        {
+            l1+=" ___ ";
+            l2+="| _ \\";
+            l3+="|  _/";
+            l4+="|_|  ";
+            break;
+        }
+    case 'q':
+        {
+            l1+="  ___  ";
+            l2+=" / _ \\ ";
+            l3+="| (_) |";
+            l4+=" \\__\\_\\";
+            break;
+        }
+    case 'r':
+        {
+            l1+=" ___ ";
+            l2+="| _ \\";
+            l3+="|   /";
+            l4+="|_|_\\";
+            break;
+        }
+    case 's':
+        {
+            l1+=" ___ ";
+            l2+="/ __|";
+            l3+="\\__ \\";
+            l4+="|___/";
+            break;
+        }
+    case 't':
+        {
+            l1+=" _____ ";
+            l2+="|_   _|";
+            l3+="  | |  ";
+            l4+="  |_|  ";
+            break;
+        }
+    case 'u':
+        {
+            l1+=" _   _ ";
+            l2+="| | | |";
+            l3+="| |_| |";
+            l4+=" \\___/ ";
+            break;
+        }
+    case 'v':
+        {
+            l1+="__   __";
+            l2+="\\ \\ / /";
+            l3+=" \\   / ";
+            l4+="  \\_/  ";
+            break;
+        }
+    case 'w':
+        {
+            l1+="__      __";
+            l2+="\\ \\    / /";
+            l3+=" \\ \\/\\/ / ";
+            l4+="  \\_/\\_/  ";
+            break;
+        }
+    case 'x':
+        {
+            l1+="__  __";
+            l2+="\\ \\/ /";
+            l3+=" >  < ";
+            l4+="/_/\\_\\";
+            break;
+        }
+    case 'y':
+        {
+            l1+="__   __";
+            l2+="\\ \\ / /";
+            l3+=" \\   / ";
+            l4+="  |_|  ";
+            break;
+        }
+    case 'z':
+        {
+            l1+=" ____ ";
+            l2+="|_  / ";
+            l3+=" / /  ";
+            l4+="/___| ";
+            break;
+        }
+    case ' ':
+        {
+            l1+="   ";
+            l2+="   ";
+            l3+="   ";
+            l4+="   ";
+            break;
+        }
+    case '+':
+        {
+            l1+="   _   ";
+            l2+=" _| |_ ";
+            l3+="|_   _|";
+            l4+="  |_|  ";
+            break;
+        }
+    default:
+        cout<<"Try inputing with smaller case letters"<<endl;
+    }
+}
+void converter(string name)
+{
+    for(int i=0;name[i]!='\0';i++)
+    {
+        char temp=name[i];
+        loader(temp);
+    }
+    printer();
+}
+int main()
+{
+    int t=5;
+    while(t--)
+    {
+        char name[MAX_NAME_LENGTH];
+        string nam="";
+        cout << "ENTER YOU NAME:";
+        cin.getline(name,MAX_NAME_LENGTH);
+        nam+=name;
+        converter(nam);
+    }
+    return 0;
+}
